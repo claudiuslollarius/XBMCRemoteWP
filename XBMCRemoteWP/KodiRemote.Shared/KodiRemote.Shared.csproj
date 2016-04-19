@@ -38,10 +38,13 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\ConnectionManager.cs" />
+    <Compile Include="Helpers\GlobalVariables.cs" />
+    <Compile Include="Helpers\PlayerHelper.cs" />
+    <Compile Include="Helpers\SettingsHelper.cs" />
     <Compile Include="Models\Audio\Album.cs" />
     <Compile Include="Models\Audio\Artist.cs" />
     <Compile Include="Models\Audio\Song.cs" />
-    <Compile Include="Models\Common\GroupedList.cs" />
     <Compile Include="Models\Common\Limits.cs" />
     <Compile Include="Models\ConnectionItem.cs" />
     <Compile Include="Models\PlayerItem.cs" />
@@ -56,6 +59,13 @@
     <Compile Include="Models\Video\TVShow.cs" />
     <Compile Include="Models\Views\AlbumView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPCWrappers\Application.cs" />
+    <Compile Include="RPCWrappers\AudioLibrary.cs" />
+    <Compile Include="RPCWrappers\Input.cs" />
+    <Compile Include="RPCWrappers\JSONRPC.cs" />
+    <Compile Include="RPCWrappers\Player.cs" />
+    <Compile Include="RPCWrappers\Playlist.cs" />
+    <Compile Include="RPCWrappers\VideoLibrary.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

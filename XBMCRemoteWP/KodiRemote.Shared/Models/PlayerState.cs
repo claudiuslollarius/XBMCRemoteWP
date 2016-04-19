@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
+using XBMCRemoteWP.RPCWrappers;
 
 namespace XBMCRemoteWP.Models
 {
